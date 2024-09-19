@@ -5,3 +5,10 @@ data_ingestion:
   source_URL: https://github.com/Nexaaman/Datasets/raw/main/CogniText.zip
   data_path: artifacts/data_ingestion/Data.zip
   save_dir: artifacts/data_ingestion
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/CogniText
+  tokenizer: gpt2
+  save_dir: artifacts/data_transformation/Data.json
+  

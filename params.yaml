@@ -1,1 +1,7 @@
-key: value
+DataLoaderParams:
+  batch_size: 4
+  max_length: 256
+  stride: 256 
+  shuffle: True 
+  drop_last: True 
+  num_workers: 0
