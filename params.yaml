@@ -5,3 +5,13 @@ DataLoaderParams:
   shuffle: True 
   drop_last: True 
   num_workers: 0
+  vocab_size: 50257       # Vocabulary size (e.g., for GPT-2)
+  emb_dim: 768            # Embedding dimension (reduce this if necessary)
+  context_length: 512    # Max sequence length (reduced from 1024 to 512 to fit in memory)
+  n_heads: 12             # Number of attention heads
+  n_layers: 6            # Reduced number of transformer blocks (reduce to fit in 15GB)
+  drop_rate: 0.1        # Dropout rate
+  ff_dim: 3072           # Feedforward dimension
+  qkv_bias: True         # Bias in query/key/value layers
+  learning_rate: 0.0005
+  max_token: 124  # Initial learning rate

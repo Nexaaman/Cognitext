@@ -12,3 +12,12 @@ data_transformation:
   tokenizer: gpt2
   save_dir: artifacts/data_transformation/Data.json
   
+model_training:
+  root_dir: artifacts/model_trained
+  data_path: artifacts/data_transformation/Data.json
+  save_dir: artifacts/model_trained/model
+  tokenizer: gpt2
+
+prediction:
+  model: artifacts/model_trained/model/model.safetensors
+  tokenizer: gpt2
